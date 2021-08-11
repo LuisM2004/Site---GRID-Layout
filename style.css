@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+
+h1{
+    grid-column: span 6;
+    padding-top: 15vh;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+section{
+    width: 100vw;
+}
+section div{
+    grid-column: span 6;
+}
+h1{
+    grid-column: span 6;
+    line-height: 40px
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+}
+#sobre div div img{
+    width: 90%;
+    border: black 1px solid;
+}
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#cursos div img {
+    width:100%;
+}
+
+#cursos div h2{
+    margin-top:1vh;
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+#curso-wd{
+    
+    border-top:2vh solid#f00;
+}
+
+#curso-prog{
+    
+    border-top:2vh solid#0f0;
+}
+#curso-bd{
+     
+    border-top:2vh solid#00f;
+}
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 10vw;
+    }
+    nav{
+        grid-column: 3/6
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+
+    
+}
